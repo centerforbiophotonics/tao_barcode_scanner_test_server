@@ -4,6 +4,7 @@ class TaoController < ApplicationController
   end
 
   def attend
+    # render :json => {status: "fail"}
     render :json => {status: "success"}
   end
 end

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name":"Session 1 Track A Workshop 1",
+    "registrants":[
+      {"id": 636920006282, "name":"Matt", "attended":false},
+      {"id": 1111111, "name":"Mart", "attended":false}
+    ]    
+  },
+  {
+    "id": 2,
+    "name":"Session 1 Track B Workshop 2",
+    "registrants":[
+      {"id": 333333333333, "name":"Batt", "attended":false},
+      {"id": 9780596006280, "name":"Bart", "attended":false}
+    ]    
+  }
+]

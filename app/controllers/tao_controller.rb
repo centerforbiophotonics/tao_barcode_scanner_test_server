@@ -17,7 +17,6 @@ class TaoController < ApplicationController
     # render :json => {status: "fail"}
     r = Registration.where(:attendee_id => params[:attendee_id], :workshop_id => params[:workshop_id]).first
     r.attended = true;
-    
     if r.save
     	render :json => {status: "success"}
     else

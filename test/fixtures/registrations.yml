@@ -2,10 +2,10 @@
 
 one:
   attended: false
-  workshop: one
-  attendee: one
+  workshop_id: 1
+  attendee_id: 9780596006280
 
 two:
   attended: false
-  workshop: two
-  attendee: two
+  workshop_id: 2
+  attendee_id: 2222222222222

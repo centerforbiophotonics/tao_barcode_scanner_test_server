@@ -3,9 +3,49 @@
 one:
   attended: false
   workshop_id: 1
-  attendee_id: 9780596006280
+  attendee_id: 9780596
 
 two:
   attended: false
   workshop_id: 2
-  attendee_id: 2222222222222
+  attendee_id: 2222222
+
+three:
+  attended: false
+  workshop_id: 2
+  attendee_id: 3333
+
+four:
+  attended: false
+  workshop_id: 2
+  attendee_id: 4444
+
+five:
+  attended: false
+  workshop_id: 4
+  attendee_id: 5555
+
+six:
+  attended: false
+  workshop_id: 1
+  attendee_id: 6666
+
+seven:
+  attended: false
+  workshop_id: 2
+  attendee_id: 7777
+
+eight:
+  attended: false
+  workshop_id: 3
+  attendee_id: 8888
+
+nine:
+  attended: false
+  workshop_id: 3
+  attendee_id: 9999
+
+ten:
+  attended: false
+  workshop_id: 4
+  attendee_id: 1010

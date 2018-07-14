@@ -6,21 +6,33 @@ class TaoController < ApplicationController
 	  	workshop = {:id => w.id, :name => w.name, :registrants => []}
 	  	w.registrations.each do |r|
 	  		a = r.attendee
-	  		workshop[:registrants].push({:id => a.id, :name => a.name, :attended => r.attended})
+	  		workshop[:registrants].push({:id => a.kerberos, :name => a.name, :attended => r.attended})
 	  	end
 	  	@workshops.push(workshop)
 	  end
-	  render :json => @workshops
+	  number = rand(10)
+	  if (number <= 4 && number >= 0)
+	  	render json: @resource, status: 500
+	  else
+	  	render :json => @workshops
+	  end
   end
 
   def attend
     # render :json => {status: "fail"}
-    r = Registration.where(:attendee_id => params[:attendee_id], :workshop_id => params[:workshop_id]).first
+    a = Attendee.where(:kerberos => params[:attendee_id]).first
+    r = Registration.where(:attendee_id => a.id, :workshop_id => params[:workshop_id]).first
     r.attended = true;
-    if r.save
-    	render :json => {status: "success"}
-    else
-    	render :json => {status: "failure"}
-    end
+    number = rand(10)
+    puts number
+    if number <= 8 && number >= 0
+	    if r.save
+	    	render :json => {status: "success"}
+	    else
+	    	render :json => {status: "failure"}
+	    end
+	else
+		 render json: @resource, status: 500
+	end
   end
 end

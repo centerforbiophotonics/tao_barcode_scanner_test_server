@@ -44,8 +44,3 @@ nine:
   attended: false
   workshop_id: 3
   attendee_id: 9999
-
-ten:
-  attended: false
-  workshop_id: 4
-  attendee_id: 1010

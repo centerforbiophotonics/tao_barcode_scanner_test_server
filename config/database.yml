@@ -10,8 +10,14 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: db/development.sqlite3
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: taotest
+  pool:     20
+  username: postgres
+  password:
+  template: template0
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 9780596
+  kerberos: studentfc
+  name: Linus "The Penguin" Torvalds
+
+two:
+  id: 2222222
+  kerberos: studentbc
+  name: Darth Maul
+
+three:
+  id: 3333
+  kerberos: thansguy
+  name: Thanos
+
+four:
+  id: 4444
+  kerberos: lbjames
+  name: Lebron James
+
+five:
+  id: 5555
+  kerberos: tidstdis
+  name: Tidus
+
+six:
+  id: 6666
+  kerberos: ynayna
+  name: Yuna
+
+seven:
+  id: 7777
+  kerberos: gbill
+  name: Bill Gates
+
+eight:
+  id: 8888
+  kerberos: jsteve
+  name: Steve Jobs
+
+nine:
+  id: 9999
+  kerberos: leuler
+  name: Leonhard Euler
+

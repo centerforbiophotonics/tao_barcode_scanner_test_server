@@ -17,36 +17,31 @@ three:
 
 four:
   id: 4444
-  kerberos: hfoutside
-  name: Random Hobo From Outside
-
-five:
-  id: 5555
   kerberos: lbjames
   name: Lebron James
 
-six:
-  id: 6666
+five:
+  id: 5555
   kerberos: tidstdis
   name: Tidus
 
-seven:
-  id: 7777
+six:
+  id: 6666
   kerberos: ynayna
   name: Yuna
 
+seven:
+  id: 7777
+  kerberos: gbill
+  name: Bill Gates
+
 eight:
   id: 8888
-  kerberos: gbill
-  name: Bill "Microsoft" Gates
+  kerberos: jsteve
+  name: Steve Jobs
 
 nine:
   id: 9999
-  kerberos: jsteve
-  name: Steve "It just works" Jobs
-
-ten:
-  id: 1010
   kerberos: leuler
   name: Leonhard Euler
 

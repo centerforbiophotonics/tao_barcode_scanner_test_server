@@ -1,5 +1,7 @@
 namespace :stress_test do
-	desc "This task will generate a printable PDF with two columns of barcodes for testing."
+	desc "This task will generate a pre-determined amount of attendees,
+	and register them for a pre-determined amount of workshops for the
+	purpose of stress testing the application."
 	task generate: :environment do
 		Attendee.all.each do |a|
 			puts a.name
@@ -14,7 +16,7 @@ namespace :stress_test do
 			w.save!
 			wc += 1
 		end
-		
+
 		while (ac < 10000)
 			#Create new attendee
 			a = Attendee.new

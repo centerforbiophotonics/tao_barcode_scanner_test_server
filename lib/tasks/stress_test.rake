@@ -3,21 +3,20 @@ namespace :stress_test do
 	and register them for a pre-determined amount of workshops for the
 	purpose of stress testing the application."
 	task generate: :environment do
-		Attendee.all.each do |a|
-			puts a.name
-		end
+		DESIRED_WORKSHOPS = 64
+		DESIRED_ATTENDEES = 10000
 
 		wc = Workshop.count
 		ac = Attendee.count
 
-		while (wc < 64)
+		while (wc < DESIRED_WORKSHOPS)
 			w = Workshop.new
 			w.name = rand(36**10).to_s(36)
 			w.save!
 			wc += 1
 		end
 
-		while (ac < 10000)
+		while (ac < DESIRED_ATTENDEES)
 			#Create new attendee
 			a = Attendee.new
 			a.name = rand(36**15).to_s(36)

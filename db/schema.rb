@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 2018_07_11_000314) do
 
   create_table "registrations", force: :cascade do |t|
     t.boolean "attended"
-    t.integer "workshop_id"
-    t.integer "attendee_id"
+    t.bigint "workshop_id"
+    t.bigint "attendee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["attendee_id"], name: "index_registrations_on_attendee_id"
@@ -38,4 +38,6 @@ ActiveRecord::Schema.define(version: 2018_07_11_000314) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "registrations", "attendees"
+  add_foreign_key "registrations", "workshops"
 end
